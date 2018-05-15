@@ -52,96 +52,96 @@ local color =
 {
    -- http://chir.ag/projects/name-that-color/#EFE571
 
-   white       = { 0xFF , 0xFF , 0xFF , 255 },  --  #FFFFFF
-   black       = { 0x00 , 0x00 , 0x00 , 255 },  --  #000000
+   white       = { 0xFF/255 , 0xFF/255 , 0xFF/255 , 255/255 },  --  #FFFFFF
+   black       = { 0x00/255 , 0x00/255 , 0x00/255 , 255/255 },  --  #000000
 
-   grey0       = { 0x19 , 0x19 , 0x19 , 255 },  --  #191919
-   grey1       = { 0x32 , 0x32 , 0x32 , 255 },  --  #323232
-   grey2       = { 0x4B , 0x4B , 0x4B , 255 },  --  #4B4B4B
-   grey3       = { 0x64 , 0x64 , 0x64 , 255 },  --  #646464
-   grey4       = { 0x7F , 0x7F , 0x7F , 255 },  --  #7F7F7F
-   grey5       = { 0x96 , 0x96 , 0x96 , 255 },  --  #969696
-   grey6       = { 0xAF , 0xAF , 0xAF , 255 },  --  #AFAFAF
-   grey7       = { 0xC8 , 0xC8 , 0xC8 , 255 },  --  #C8C8C8
-   grey8       = { 0xE1 , 0xE1 , 0xE1 , 255 },  --  #E1E1E1
-   grey9       = { 0xF0 , 0xF0 , 0xF0 , 255 },  --  #F0F0F0
+   grey0       = { 0x19/255, 0x19/255, 0x19/255, 255/255},  --  #191919
+   grey1       = { 0x32/255, 0x32/255, 0x32/255, 255/255},  --  #323232
+   grey2       = { 0x4B/255, 0x4B/255, 0x4B/255, 255/255},  --  #4B4B4B
+   grey3       = { 0x64/255, 0x64/255, 0x64/255, 255/255},  --  #646464
+   grey4       = { 0x7F/255, 0x7F/255, 0x7F/255, 255/255},  --  #7F7F7F
+   grey5       = { 0x96/255, 0x96/255, 0x96/255, 255/255},  --  #969696
+   grey6       = { 0xAF/255, 0xAF/255, 0xAF/255, 255/255},  --  #AFAFAF
+   grey7       = { 0xC8/255, 0xC8/255, 0xC8/255, 255/255},  --  #C8C8C8
+   grey8       = { 0xE1/255, 0xE1/255, 0xE1/255, 255/255},  --  #E1E1E1
+   grey9       = { 0xF0/255, 0xF0/255, 0xF0/255, 255/255},  --  #F0F0F0
 
-   red         = { 0xFF , 0x00 , 0x00 , 255 },  --  #FF0000
-   green       = { 0x00 , 0xFF , 0x00 , 255 },  --  #00FF00
-   blue        = { 0x00 , 0x00 , 0xFF , 255 },  --  #0000FF
+   red         = { 0xFF/255, 0x00/255, 0x00/255, 255/255},  --  #FF0000
+   green       = { 0x00/255, 0xFF/255, 0x00/255, 255/255},  --  #00FF00
+   blue        = { 0x00/255, 0x00/255, 0xFF/255, 255/255},  --  #0000FF
 
-   yellow      = { 0xFF , 0xFF , 0x00 , 255 },  --  #FFFF00
-   cyan        = { 0x00 , 0xFF , 0xFF , 255 },  --  #00FFFF
-   magenta     = { 0xFF , 0x00 , 0xFF , 255 },  --  #FF00FF
+   yellow      = { 0xFF/255, 0xFF/255, 0x00/255, 255/255},  --  #FFFF00
+   cyan        = { 0x00/255, 0xFF/255, 0xFF/255, 255/255},  --  #00FFFF
+   magenta     = { 0xFF/255, 0x00/255, 0xFF/255, 255/255},  --  #FF00FF
 
-   darkblue    = { 0x00 , 0x00 , 0x7F , 255 },  --  #00007F
-   darkgreen   = { 0x00 , 0x7F , 0x00 , 255 },  --  #007F00
-   dardred     = { 0x7F , 0x00 , 0x00 , 255 },  --  #7F0000
+   darkblue    = { 0x00/255, 0x00/255, 0x7F/255, 255/255},  --  #00007F
+   darkgreen   = { 0x00/255, 0x7F/255, 0x00/255, 255/255},  --  #007F00
+   dardred     = { 0x7F/255, 0x00/255, 0x00/255, 255/255},  --  #7F0000
 
-   darkyellow  = { 0x7F , 0x7F , 0x00 , 255 },  --  #7F7F00
-   darkcyan    = { 0x00 , 0x7F , 0x7F , 255 },  --  #007F7F
-   darkmagenta = { 0x7F , 0x00 , 0x7F , 255 },  --  #7F007F
+   darkyellow  = { 0x7F/255, 0x7F/255, 0x00/255, 255/255},  --  #7F7F00
+   darkcyan    = { 0x00/255, 0x7F/255, 0x7F/255, 255/255},  --  #007F7F
+   darkmagenta = { 0x7F/255, 0x00/255, 0x7F/255, 255/255},  --  #7F007F
 
-   dolly          = { 0xFF , 0xFF , 0x7F , 255 },  --  #FFFF7F
-   chartreuse     = { 0x7F , 0xFF , 0x00 , 255 },  --  #7FFF00
-   springgreen    = { 0x00 , 0xFF , 0x7F , 255 },  --  #00FF7F
-   mintgreen      = { 0x7F , 0xFF , 0x7F , 255 },  --  #7FFF7F
-   aquamarine     = { 0x7F , 0xFF , 0xFF , 255 },  --  #7FFFFF
-   azureradiance  = { 0x00 , 0x7F , 0xFF , 255 },  --  #007FFF
-   malibu         = { 0x7F , 0x7F , 0xFF , 255 },  --  #7F7FFF
-   electricviolet = { 0x7F , 0x00 , 0xFF , 255 },  --  #7F00FF
-   blushpink      = { 0xFF , 0x7F , 0xFF , 255 },  --  #FF7FFF
-   rose           = { 0xFF , 0x00 , 0x7F , 255 },  --  #FF007F
-   vividtangerine = { 0xFF , 0x7F , 0x7F , 255 },  --  #FF7F7F
-   flushorange    = { 0xFF , 0x7F , 0x00 , 255 },  --  #FF7F00
+   dolly          = { 0xFF/255, 0xFF/255, 0x7F/255, 255/255},  --  #FFFF7F
+   chartreuse     = { 0x7F/255, 0xFF/255, 0x00/255, 255/255},  --  #7FFF00
+   springgreen    = { 0x00/255, 0xFF/255, 0x7F/255, 255/255},  --  #00FF7F
+   mintgreen      = { 0x7F/255, 0xFF/255, 0x7F/255, 255/255},  --  #7FFF7F
+   aquamarine     = { 0x7F/255, 0xFF/255, 0xFF/255, 255/255},  --  #7FFFFF
+   azureradiance  = { 0x00/255, 0x7F/255, 0xFF/255, 255/255},  --  #007FFF
+   malibu         = { 0x7F/255, 0x7F/255, 0xFF/255, 255/255},  --  #7F7FFF
+   electricviolet = { 0x7F/255, 0x00/255, 0xFF/255, 255/255},  --  #7F00FF
+   blushpink      = { 0xFF/255, 0x7F/255, 0xFF/255, 255/255},  --  #FF7FFF
+   rose           = { 0xFF/255, 0x00/255, 0x7F/255, 255/255},  --  #FF007F
+   vividtangerine = { 0xFF/255, 0x7F/255, 0x7F/255, 255/255},  --  #FF7F7F
+   flushorange    = { 0xFF/255, 0x7F/255, 0x00/255, 255/255},  --  #FF7F00
 
-   skin        = { 0xF4 , 0xAA , 0x8D , 255 },  --  #F4AA8D
-   rosa        = { 0xF7 , 0xCB , 0xDE , 255 },  --  #F7CBDE
-   lilac       = { 0xF6 , 0xE3 , 0xFD , 255 },  --  #F6E3FD
-   purple      = { 0xCC , 0x5F , 0xB2 , 255 },  --  #CC5FB2
-   affair      = { 0x7D , 0x4C , 0x95 , 255 },  --  #7D4C95
-   lime        = { 0xD9 , 0xDF , 0xD0 , 255 },  --  #D9DF0D
-   lemon       = { 0xFB , 0xE5 , 0x2B , 255 },  --  #FBE52B
-   orange      = { 0xFF , 0xAA , 0xB0 , 255 },  --  #FFAA0B
-   grapefruit  = { 0xF8 , 0x59 , 0x40 , 255 },  --  #F85904
-   wine        = { 0xAA , 0xE0 , 0xE0 , 255 },  --  #AA0E0E
-   bordeaux    = { 0x61 , 0x21 , 0x3C , 255 },  --  #61213C
-   brown       = { 0x84 , 0x49 , 0xC0 , 255 },  --  #84490C
-   butter      = { 0xFB , 0xFA , 0xC5 , 255 },  --  #FBFAC5
-   creme       = { 0xF9 , 0xF3 , 0xE5 , 255 },  --  #F9F3E5
-   turquoise   = { 0x22 , 0xCB , 0x11 , 255 },  --  #22CB11
-   teal        = { 0x50 , 0xAD , 0x83 , 255 },  --  #50AD83
-   olive       = { 0x71 , 0x86 , 0x33 , 255 },  --  #718633
-   mint        = { 0xE4 , 0xF7 , 0xD7 , 255 },  --  #E4F7D7
-   ice         = { 0xDA , 0xF7 , 0xFE , 255 },  --  #DAF7FE
-   steel       = { 0x79 , 0xAF , 0xD4 , 255 },  --  #79AFD4
-   navy        = { 0x32 , 0x4B , 0x99 , 255 },  --  #324B99
+   skin        = { 0xF4/255, 0xAA/255, 0x8D/255, 255/255},  --  #F4AA8D
+   rosa        = { 0xF7/255, 0xCB/255, 0xDE/255, 255/255},  --  #F7CBDE
+   lilac       = { 0xF6/255, 0xE3/255, 0xFD/255, 255/255},  --  #F6E3FD
+   purple      = { 0xCC/255, 0x5F/255, 0xB2/255, 255/255},  --  #CC5FB2
+   affair      = { 0x7D/255, 0x4C/255, 0x95/255, 255/255},  --  #7D4C95
+   lime        = { 0xD9/255, 0xDF/255, 0xD0/255, 255/255},  --  #D9DF0D
+   lemon       = { 0xFB/255, 0xE5/255, 0x2B/255, 255/255},  --  #FBE52B
+   orange      = { 0xFF/255, 0xAA/255, 0xB0/255, 255/255},  --  #FFAA0B
+   grapefruit  = { 0xF8/255, 0x59/255, 0x40/255, 255/255},  --  #F85904
+   wine        = { 0xAA/255, 0xE0/255, 0xE0/255, 255/255},  --  #AA0E0E
+   bordeaux    = { 0x61/255, 0x21/255, 0x3C/255, 255/255},  --  #61213C
+   brown       = { 0x84/255, 0x49/255, 0xC0/255, 255/255},  --  #84490C
+   butter      = { 0xFB/255, 0xFA/255, 0xC5/255, 255/255},  --  #FBFAC5
+   creme       = { 0xF9/255, 0xF3/255, 0xE5/255, 255/255},  --  #F9F3E5
+   turquoise   = { 0x22/255, 0xCB/255, 0x11/255, 255/255},  --  #22CB11
+   teal        = { 0x50/255, 0xAD/255, 0x83/255, 255/255},  --  #50AD83
+   olive       = { 0x71/255, 0x86/255, 0x33/255, 255/255},  --  #718633
+   mint        = { 0xE4/255, 0xF7/255, 0xD7/255, 255/255},  --  #E4F7D7
+   ice         = { 0xDA/255, 0xF7/255, 0xFE/255, 255/255},  --  #DAF7FE
+   steel       = { 0x79/255, 0xAF/255, 0xD4/255, 255/255},  --  #79AFD4
+   navy        = { 0x32/255, 0x4B/255, 0x99/255, 255/255},  --  #324B99
 
-   c1          = { 0xEF , 0x8C , 0xBD , 255 },  --  #EF8CBD
-   c2          = { 0xE2 , 0x5E , 0x93 , 255 },  --  #E25E93
-   c3          = { 0xEA , 0x2F , 0x70 , 255 },  --  #EA2F70
-   c4          = { 0xFC , 0xD4 , 0xBB , 255 },  --  #FCD4BB
-   c5          = { 0xC8 , 0x7D , 0x46 , 255 },  --  #C87D00
-   c6          = { 0x76 , 0x4C , 0x22 , 255 },  --  #764C00
-   c7          = { 0xBF , 0xDD , 0x96 , 255 },  --  #BFDD96
-   c8          = { 0x8E , 0xC6 , 0x00 , 255 },  --  #8EC600
-   c9          = { 0x29 , 0xB7 , 0x81 , 255 },  --  #29B781
-   c10         = { 0xDC , 0xEF , 0xFF , 255 },  --  #DCEFFF
-   c11         = { 0x6C , 0xBD , 0xE8 , 255 },  --  #6CBDE8
-   c12         = { 0x80 , 0x75 , 0xC2 , 255 },  --  #0875C2
-   c13         = { 0x26 , 0x36 , 0x97 , 255 },  --  #263697
-   c14         = { 0xEC , 0xF1 , 0xF3 , 255 },  --  #ECF1F3
-   c15         = { 0xCA , 0xDC , 0xED , 255 },  --  #CADCED
-   c16         = { 0x80 , 0x9F , 0xBB , 255 },  --  #809FBB
-   c17         = { 0x59 , 0x7E , 0x9D , 255 },  --  #597E9D
-   c18         = { 0x15 , 0x44 , 0x52 , 255 },  --  #154400
+   c1          = { 0xEF/255, 0x8C/255, 0xBD/255, 255/255},  --  #EF8CBD
+   c2          = { 0xE2/255, 0x5E/255, 0x93/255, 255/255},  --  #E25E93
+   c3          = { 0xEA/255, 0x2F/255, 0x70/255, 255/255},  --  #EA2F70
+   c4          = { 0xFC/255, 0xD4/255, 0xBB/255, 255/255},  --  #FCD4BB
+   c5          = { 0xC8/255, 0x7D/255, 0x46/255, 255/255},  --  #C87D00
+   c6          = { 0x76/255, 0x4C/255, 0x22/255, 255/255},  --  #764C00
+   c7          = { 0xBF/255, 0xDD/255, 0x96/255, 255/255},  --  #BFDD96
+   c8          = { 0x8E/255, 0xC6/255, 0x00/255, 255/255},  --  #8EC600
+   c9          = { 0x29/255, 0xB7/255, 0x81/255, 255/255},  --  #29B781
+   c10         = { 0xDC/255, 0xEF/255, 0xFF/255, 255/255},  --  #DCEFFF
+   c11         = { 0x6C/255, 0xBD/255, 0xE8/255, 255/255},  --  #6CBDE8
+   c12         = { 0x80/255, 0x75/255, 0xC2/255, 255/255},  --  #0875C2
+   c13         = { 0x26/255, 0x36/255, 0x97/255, 255/255},  --  #263697
+   c14         = { 0xEC/255, 0xF1/255, 0xF3/255, 255/255},  --  #ECF1F3
+   c15         = { 0xCA/255, 0xDC/255, 0xED/255, 255/255},  --  #CADCED
+   c16         = { 0x80/255, 0x9F/255, 0xBB/255, 255/255},  --  #809FBB
+   c17         = { 0x59/255, 0x7E/255, 0x9D/255, 255/255},  --  #597E9D
+   c18         = { 0x15/255, 0x44/255, 0x52/255, 255/255},  --  #154400
 
-   lovered     = { 0xE6 , 0x5A , 0xA5 , 255 },  --  #E65AA5
-   lovegreen1  = { 0xC3 , 0xDC , 0x96 , 255 },  --  #C3DC96
-   lovegreen2  = { 0x8D , 0xC5 , 0x40 , 255 },  --  #8DC540
-   loveblue1   = { 0xE6 , 0xF0 , 0xFA , 255 },  --  #E6F0FA
-   loveblue2   = { 0x78 , 0xB4 , 0xE1 , 255 },  --  #78B4E1
-   loveblue3   = { 0x19 , 0x7D , 0xBE , 255 },  --  #197DBE
+   lovered     = { 0xE6/255, 0x5A/255, 0xA5/255, 255/255},  --  #E65AA5
+   lovegreen1  = { 0xC3/255, 0xDC/255, 0x96/255, 255/255},  --  #C3DC96
+   lovegreen2  = { 0x8D/255, 0xC5/255, 0x40/255, 255/255},  --  #8DC540
+   loveblue1   = { 0xE6/255, 0xF0/255, 0xFA/255, 255/255},  --  #E6F0FA
+   loveblue2   = { 0x78/255, 0xB4/255, 0xE1/255, 255/255},  --  #78B4E1
+   loveblue3   = { 0x19/255, 0x7D/255, 0xBE/255, 255/255},  --  #197DBE
 
 --#6CBEE4
 --#D6EEFC
@@ -226,6 +226,7 @@ guru.DevMode = false
 
 local Fonts_t = {}
 local FontSize_n
+
 if CfgFlags.highdpi then
    FontSize_n  = 32
    LineWidth_n = 2
@@ -233,6 +234,7 @@ else
    FontSize_n  = 16
    LineWidth_n = 1
 end
+
 local Theme_s                = "love"
 local MouseOver              = false
 

@@ -23,7 +23,7 @@ function love.load() -- <<<
    -- btn6  = guru.newButton(MyButtonFunc, {text="click me", x=50, y=800, image="graphics/9.png", cornerradius=4})
    -- btn7  = guru.newButton(MyButtonFunc, {text="click me", x=300, y=800, width=128, height=111, image="graphics/btn.png"})
    -- btn8  = guru.newButton(MyButtonFunc, {text="click me", x=600, y=800, image="graphics/black.png", scaling="stretch"})
-   img0  = guru.newImage("graphics/pic.png", {width=800, backcolor=guru.Color.black})
+   -- img0  = guru.newImage("graphics/pic.png", {width=800, backcolor=guru.Color.black})
    --tb1   = guru.newTextBox(10, 10, 300, 20)
    --tb2   = guru.newTextBox(320, 10, 300, 20); tb2.MaxCharacters = 5; tb2.ValidCharacters = [[%d]]
    --tog   = guru.newToggle(700, 10, 20)
@@ -87,7 +87,7 @@ function love.mousereleased(x, y, button, istouch) -- <<<
 end -- >>>
 
 function love.mousemoved(x, y, dx, dy) -- <<<
-   guru.mousemoved(x,y,dx,dy)
+   guru.mousemoved(x, y, dx, dy)
 end -- >>>
 
 function love.wheelmoved(dx, dy) -- <<<
@@ -99,7 +99,7 @@ function love.textinput(text) -- <<<
 end -- >>>
 
 function love.resize(w, h) -- <<<
-   guru.resize(w,h)
+   guru.resize(w, h)
 end -- >>>
 
 function love.update(dt) -- <<<
